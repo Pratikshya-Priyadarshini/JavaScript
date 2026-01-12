@@ -67,6 +67,44 @@ let t = 12
 let y = Boolean(t)
 console.log(y);
 
+// operations 
+
+let value = 2
+let negavalue = -value
+console.log(negavalue)
+
+console.log(2*4)
+console.log(2**4)
+console.log(2/2)
+console.log(2%2)
+
+let str1 = "Pratikshya"
+let str2 = " Priyadarshini"
+let str3 = str1 + str2
+console.log(str3)
+
+console.log(1+2+"2")
+console.log("1"+2+2)
+console.log(+"");
+console.log(+true);
+
+let xx = 3;
+const yy = xx++;
+console.log(`xx:${xx}, yy:${yy}`);
+// Expected output: "x:4, y:3"
+//post-increment : first use the value then increment
+// y use the value the x gets increment
+
+let xxxx = 3;
+const yyyy = ++xxxx;
+console.log(`xxxx:${xxxx}, yyyy:${yyyy}`);
+// Expected output: "x:4, y:4"
+//pre-increment : first increment the value and use the increment value.
+// y gets increment and x use the increment value.
+
+
+
+
 
 
 
