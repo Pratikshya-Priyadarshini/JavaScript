@@ -40,3 +40,28 @@ const myFunc = function(){
     
 }
 
+//  ***********************************
+
+let myName = "Pratikshya"
+let anotherName = myName
+anotherName = "Priyadarshini"
+console.log("myName ",myName)
+console.log("anotherName ",anotherName)
+
+
+let Id = {
+    name: "Pratikshya",
+    age: 21
+}
+let myId = Id
+myId.name = "Micky"
+console.log("myId.name ",myId.name);
+console.log("Id.name ",Id.name);
+
+
+// Stack: Small + Fast + Temporary 
+// - Primitive + Function Execution + Heap address(references)
+// - copy value
+
+// Heap: Non-primitive 
+// - big + slow + Permanent 
