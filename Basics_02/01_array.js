@@ -82,4 +82,44 @@ console.log("fruits.slice(1,3) : ",fruits.slice(1,3));
 console.log("fruits.slice(-2) : ",fruits.slice(2));
 console.log(fruits);
 
+// ************ Array Search Methods ********
+console.log(fruits);
+
+
+// 1. indexOf()
+console.log("fruits.indexOf('kiwi') : ",fruits.indexOf('kiwi'));
+console.log("fruits.indexOf('egg') : ",fruits.indexOf('egg'));
+
+// 2. lastIndexOf()
+console.log("fruits.lastIndexOf('papaya') : ",fruits.lastIndexOf('papaya'));
+
+//3. include()
+console.log("fruits.includes('banana') : ",fruits.includes('banana'));
+fruits.includes('banana')
+
+//************ alphabetic sort *************//
+console.log(fruits);
+
+
+// 1. sort()
+console.log("fruits.sort() : ", fruits.sort())
+console.log(fruits);
+
+//2. reverse()
+console.log("fruits.reverse() : ",fruits.reverse());
+console.log(fruits);
+
+console.log("fruits.sort().reverse() : ",fruits.sort().reverse());
+
+
+
+//3. toSorted()
+//4. to reversed()
+// - these 2 methods doesn't alter the original array.
+
+// ************ Numeric sort ************//
+
+const points = [40, 100, 1, 5, 25, 10];
+console.log(points.sort(function(a,b){return a - b}));
+console.log(points.sort(function(a,b){return b - a }));
 
