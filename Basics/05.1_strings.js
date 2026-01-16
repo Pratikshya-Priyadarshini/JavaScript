@@ -1,5 +1,8 @@
+
 // STRING METHOD
-let name = "Pratikshya Priyadarshini"
+
+
+const name = "Pratikshya Priyadarshini"
 
 //1. Length
 console.log(".length : ",name.length);
@@ -66,19 +69,81 @@ console.log(".trimEnd() : ", newName.trimEnd());
 // - methof does not change the original string.
 console.log(".repeat(5) : ", name.repeat(5));
 
+const text = "Please visit Microsoft and Microsoft!";
+
 // 16. replace()
 // - replace only 1st match
 console.log(".replace(Priyadarshini, Micky)", name.replace("Priyadarshini", "Micky"));
 console.log(".replace(/PRIYADARSHINI/i, Micky)", name.replace(/PRIYADARSHINI/i, "Micky"));
 // - to replace case insensitive, use a regular expression with an /i flag (insensitive):
-
-let text = "Please visit Microsoft and Microsoft!";
 let newText = text.replace(/Microsoft/g, "W3Schools")
 //-To replace all matches, use a regular expression with a /g flag (global match)
 
 // 17. .replaceAll()
+// - replace all accurence 
+console.log(".replaceAll() : ", text.replaceAll("Microsoft","github"))
 
 
 // 18. split()
 
 console.log(".split() : ", name.split(" "));
+
+//******************************************************************
+// STRING SEARCH
+
+// 1. .indexOf()
+// - this method returns the index of the first occurence of a string in a string,
+// - or it returns -1 of the string in not found.
+console.log(".indexOf(Microsoft) : ", text.indexOf("Microsoft"))
+console.log(".indexOf(Github) : ", text.indexOf("Github"))
+
+// 2. .lastIndexOf()
+// - this method returns the index of the last occurence of a specified text in a string.
+// - it searches backwards (from the end to the beginning)
+console.log(".lastIndexOf(Microsoft) : ", text.lastIndexOf("Microsoft"))
+console.log(".lastIndexOf(Github) : ", text.lastIndexOf("Github"))
+
+// - Both methods accept a second parameter as the starting position for the search:
+console.log(".indexOf(Microsoft) : ", text.indexOf("Microsoft",14))
+console.log(".lastIndexOf(Microsoft) : ", text.lastIndexOf("Microsoft",25))
+
+// 3. .search()
+// - this method searches a string for a string (or a regular expression)
+// - return the position of the match.
+// - it cannot take poweful search values (regular expressions).
+console.log(".search(Microsoft) : ", text.search("Microsoft"));
+console.log(".search(Microsoft) : ", text.search(/Microsoft/));
+
+// 4. .match()
+// - method returns an array containing the results of matching a string against a string.
+console.log(".match(soft) : ", text.match("soft"));
+console.log(".match(soft) : ", text.match(/soft/));
+console.log(".match(soft) : ", text.match(/soft/g));
+console.log(".match(sOFT) : ", text.match(/SoFT/gi));
+
+// 5. .matchAll()
+// - this method returns an iterator containing the results of matching a string against a string (or a regular expression).
+console.log(".matchAll(soft) : ", text.matchAll("soft"));
+console.log(".matchAll(soft) : ", text.matchAll(/soft/g));
+
+// 6. .includes()
+// - this method returns true if a string contains a specified value.
+// - otherwise it returns false.
+console.log(".includes(Microsoft) : ", text.includes("Microsoft"))
+console.log(".includes(Github) : ", text.includes("Github"))
+console.log(".includes(Microsoft) : ", text.includes("Microsoft",14))
+console.log(".includes(Microsoft) : ", text.includes("Microsoft",28))
+
+// 7. .startsWith()
+// - this method returns true if a string begins with a specified value
+// - otherwise it returns false
+// - index starts with 1.
+console.log(".startsWith() : ",text.startsWith("Please"))
+console.log(".startsWith() : ",text.startsWith("Microsoft"))
+console.log(".startsWith() : ",text.startsWith("Microsoft",13))
+
+// 8. endsWith()
+console.log(".endsWith() : ",text.endsWith("Please"))
+console.log(".endsWith() : ",text.endsWith("Microsoft!"))
+console.log(".endsWith() : ",text.endsWith("Microsoft",22))
+
