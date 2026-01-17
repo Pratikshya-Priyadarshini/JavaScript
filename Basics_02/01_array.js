@@ -13,14 +13,15 @@ console.log("fruits.at(1) : ",fruits.at(1));
 // 4. []
 console.log('fruits[1] : ',fruits[1]);
 fruits[fruits.length] = 'custard apple'
-console.log(fruits);
+console.log("fruits[fruits.length] = 'custard apple' : ",fruits);
 
 
 // 5. join()
-console.log("fruits.join("*") : ",fruits.join("*"));
+console.log("fruits.join('*') : ",fruits.join("*"));
 
 // 6. pop()
 console.log("fruits.pop() : ",fruits.pop());
+console.log("typeof(fruits.pop()) : ",typeof(fruits.pop()));
 console.log(fruits);
 
 // 7. push()
@@ -53,7 +54,7 @@ console.log("fruits.concat('green') : ",fruits.concat("green"));
 // console.log("fruits.copyWithin(4,1) : ",fruits.copyWithin(4,1));
 // console.log("fruits.copyWithin(2,0,2) : ",fruits.copyWithin(2,0,2));
 
-console.log(fruits);
+console.log("fruits : ",fruits);
 
 const myArr = [[1,2],[2,4],[4,5],[2,5]]
 
@@ -63,9 +64,9 @@ console.log(myArr.flat());
 //15. flatMap()
 
 // 16. splice()
-console.log(fruits);
+console.log("fruits : ",fruits);
 console.log("fruits.splice(2,1,'lemon','kiwi') : ",fruits.splice(2,1,'lemon','kiwi'));
-console.log(fruits);
+console.log("fruits : ",fruits);
 // - 1st parameter (2) defines the position where new element should be added 
 // - 2nd parameter (1) defines how many elements should be removed
 // - rest of parameters ('lemon','kiwi') defines the new elements to be added.
@@ -80,10 +81,10 @@ console.log("fruits.toSpliced(0,1) : ",fruits.toSpliced(0,1));
 // end index excluded
 console.log("fruits.slice(1,3) : ",fruits.slice(1,3));
 console.log("fruits.slice(-2) : ",fruits.slice(2));
-console.log(fruits);
+console.log("fruits : ",fruits);
 
 // ************ Array Search Methods ********
-console.log(fruits);
+console.log("fruits : ",fruits);
 
 
 // 1. indexOf()
