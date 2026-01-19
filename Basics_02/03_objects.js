@@ -1,5 +1,5 @@
 // objects can be declared in two methods 
-// - 1. literals.
+// - 1. literals.(non-singleton)
 // - 2. constructor (singleton).
 
 // object literals 
@@ -47,3 +47,49 @@ console.log(jsUser.greetingTwo());
 
 
 // Symbol : Primitive datatype that creates a unquie identifier
+
+const obj1 = {1:"a", 2: "b"}
+const obj2 = {3:"c", 4: "d"}
+
+// const obj3 = {obj1, obj2}
+// console.log(obj3);
+
+const obj4 = Object.assign(obj1,obj2) // all the obj are getting into obj1
+console.log(obj4);
+
+const obj5 = Object.assign({}, obj1,obj2) // all the objs are getting into {}(target/empty obj)
+console.log(obj5);
+
+const obj6 = {...obj1,...obj2}
+console.log(obj6);
+
+console.log(Object.keys(jsUser)); // the keys are in a array
+console.log(Object.values(jsUser)); // all values are in a array
+console.log(Object.entries(jsUser)); // all values are in a array
+console.log(jsUser.hasOwnProperty('age'));
+console.log(jsUser.hasOwnProperty('lastName'));
+
+const users = [
+    {
+        id: 1,
+        email : "p@gmail.com"
+    },
+     {
+        id: 2,
+        email : "p@gmail.com"
+    },
+     {
+        id: 3,
+        email : "p@gmail.com"
+    },
+     {
+        id: 4,
+        email : "p@gmail.com"
+    },
+     {
+        id: 5,
+        email : "p@gmail.com"
+    },
+]
+
+console.log(users[1].id);
