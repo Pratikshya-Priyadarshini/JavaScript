@@ -9,9 +9,9 @@ const mySym = Symbol("key2")
 
 const jsUser = {
     name : "Pratikshya", // 0 : Pratikshya in arrays (in arrays you can't keep keys, the only way to access values are arr[0])
-    age : 21,
-    "gender" : "female",
-    [Sym] : "myKey1" ,
+    age : 21,            // here the age is taken as a string, we dont need to write it between ""
+    "gender" : "female", // like we did here
+    [Sym] : "myKey1" ,  // right way
     mySym : "myKey2" ,
     lastLoginDays : ["Monday", "tuesday"]
 }
@@ -20,21 +20,22 @@ console.log(jsUser.name);
 console.log(jsUser["name"]); // this methods can be used in:
 console.log(jsUser["gender"]); // this cannot be accessed by dot notation.
 
-
-
-console.log(jsUser[Sym]);
+console.log(jsUser[Sym]); // right way
 console.log(jsUser.Sym);
 console.log(jsUser.mySym);
 
 console.log(typeof jsUser.Sym);
 console.log(typeof jsUser.mySym);
 
-// Object.freeze(jsUser) // after this changes will not apply
+console.log(jsUser);
+
+
+// Object.freeze(jsUser)     // after this you can't change it
 // jsUser.name = "Priyadarshini"
 // console.log(jsUser);
 
 
-jsUser.greeting = function(){
+jsUser.greeting = function(){     // in objects functions are treated as variables.
     console.log("hello JS users");
 }
 
