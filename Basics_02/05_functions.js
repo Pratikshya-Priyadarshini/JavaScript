@@ -50,3 +50,16 @@ console.log(againName("Pratikshya"));
 console.log(againName(""));
 console.log(againName()); // undefined 
 
+//**************************************** */
+console.log(plusOne(5));
+// console.log(plusTwo(5)); // this wil throw an error
+// this expression/function should be declared first then called.
+
+
+function plusOne(num){
+    return num+1;
+}
+
+const plusTwo = function (num){ // it is like a varible, called as expression.
+    return num+2;
+}
